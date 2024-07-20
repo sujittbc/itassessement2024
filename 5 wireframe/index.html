@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Consultancy</title>
+    <!-- Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts for custom font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS for additional styling -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #030a12;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #3d0707;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .navbar a:hover {
+            background-color: #444;
+        }
+        /* Styling for button */
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        /* Styling for main content area */
+        .container {
+            text-align: center;
+        }
+        img {
+            margin: 10px;
+            border-radius: 5px;
+        }
+        h1, h3 {
+            color: #d88006;
+        }
+        p {
+            color: #a2960e;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Expert Education Consultancy</h1>
+        <img src="download.png" alt="Expert Consultancy Logo" width="100" height="100">
+    </div>
+
+    <!-- Navigation -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="events.html">Events</a>
+        <button onclick="showMessage()">Get a Quote</button>
+    </div>
+
+    <!-- Main content area (container) -->
+    <div class="container mt-5">
+        <img src="abroad.jpg" width="850" height="400">
+
+        <h1>Welcome to Expert Consultancy</h1><br><br>
+        <h3>Your Partner in your Education, Excellence, Growth and dream </h3><br><br>
+        <p>
+            <span style="color: #cd750a;">Expert Education Consultancy</span>, a trusted education leader for 50+ years, excels in test preparation and study abroad support. Our commitment to excellence ensures unparalleled guidance and facilities, setting the stage for your academic success. Start your journey with Expert Education Consultancy🏆🌐 #ExpertEducation
+        </p>
+        <p>
+            With a rich legacy of over three decades, <span style="color: #dc8a0f;">Expert Education Consultancy</span> proudly stands as a leading education consultancy in Nepal. Boasting 33 years of experience in test preparation and 20+ years in guiding students for study abroad, Alfa Beta is recognized as the best institute for education consultancy in the region. Our dedicated team ensures a friendly and supportive environment, coupled with state-of-the-art facilities for both study abroad and English Proficiency Test preparation, making us the top choice for aspiring students. Join us at Alfa Beta, the best destination for a successful academic journey.
+        </p><br><br>
+
+        <!-- Display consultancy images -->
+        <img src="ev13.jpg" width="350" height="200">
+        <img src="ev14.jpg" width="350" height="200">
+        <img src="ev15.jpg" width="350" height="200"><br><br>
+        <img src="ev17.jpg" width="350" height="200">
+        <img src="ev18.jpg" width="350" height="200">
+        <img src="ev19.jpg" width="350" height="200">
+    </div>
+
+    <!-- JavaScript code for button click handler -->
+    <script>
+        function showMessage() {
+            alert("Get your quote now!");
+            // Navigate to the contact page
+            window.location.href = "contact.html";
+        }
+    </script>
+</body>
+
+</html>

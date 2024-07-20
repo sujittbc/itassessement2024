@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table of 5</title>
+  <style>
+    /* Add some styling for better presentation */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h2>Multiplication Table of 5</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Multiplier</th>
+        <th>Result</th>
+      </tr>
+    </thead>
+    <tbody id="multiplicationTableBody"></tbody>
+  </table>
+
+  <script>
+    // Select the table body where the results will be displayed
+    var tableBody = document.getElementById("multiplicationTableBody");
+
+    // Initialize a variable to store table row HTML
+    var tableRowsHTML = "";
+
+    // Loop through numbers 1 to 10 and generate table row HTML with multiplication results
+    for (var i = 1; i <= 10; i++) {
+      var result = 5 * i;
+      // Construct table row HTML using string templates
+      tableRowsHTML += `
+        <tr>
+          <td>5</td>
+          <td>${result}</td>
+        </tr>
+      `;
+    }
+
+    // Set the inner HTML of the table body with the generated table rows HTML
+    tableBody.innerHTML = tableRowsHTML;
+  </script>
+</body>
+</html>

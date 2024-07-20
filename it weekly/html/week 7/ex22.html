@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            border: 1px solid #000;
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 5px;
+        }
+        input[type="text"], textarea, select {
+            width: 100%;
+        }
+        textarea {
+            height: 100px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+        button[type="reset"] {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <h1>HTML Form Test</h1>
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input type="text" name="address"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>
+                        <input type="checkbox" name="hobbies" value="sports"> Sports
+                        <input type="checkbox" name="hobbies" value="movies"> Movies
+                        <input type="checkbox" name="hobbies" value="travelling"> Travelling
+                    </td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>
+                        <select name="country">
+                            <option value="nepal">Nepal</option>
+                            <!-- Add other countries as needed -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Message</td>
+                    <td><textarea name="message"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
